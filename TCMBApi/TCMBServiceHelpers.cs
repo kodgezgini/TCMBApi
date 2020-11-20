@@ -13,11 +13,11 @@ namespace TCMBApi
     {
         /// <summary>
         /// Applies order by ascending with given property name.
-        /// Avaliable Property Names: CurrencyCode, CurrencyName, BanknoteBuying, BanknoteSelling, ForexBuying, ForexSelling
+        /// Avaliable Property Names: CurrencyCode, CurrencyName, BanknoteBuying, BanknoteSelling, ForexBuying, ForexSelling.
         /// </summary>
         /// <param name="query"></param>
         /// <param name="property"></param>
-        /// <returns></returns>
+        /// <returns>IQueryable&lt;Rate&gt;</returns>
         public static IQueryable<Rate> ApplyOrderByAscending(IQueryable<Rate> query, string property)
         {
             return property switch
@@ -34,11 +34,11 @@ namespace TCMBApi
 
         /// <summary>
         /// Applies order by descending with given property name.
-        /// Avaliable Property Names: CurrencyCode, CurrencyName, BanknoteBuying, BanknoteSelling, ForexBuying, ForexSelling
+        /// Avaliable Property Names: CurrencyCode, CurrencyName, BanknoteBuying, BanknoteSelling, ForexBuying, ForexSelling.
         /// </summary>
         /// <param name="query"></param>
         /// <param name="property"></param>
-        /// <returns></returns>
+        /// <returns>IQueryable&lt;Rate&gt;</returns>
         public static IQueryable<Rate> ApplyOrderByDescending(IQueryable<Rate> query, string property)
         {
             return property switch
@@ -55,7 +55,7 @@ namespace TCMBApi
 
         /// <summary>
         /// Applies filter with given property name and value.
-        /// Avaliable Property Names: CurrencyCode, CurrencyName
+        /// Avaliable Property Names: CurrencyCode, CurrencyName.
         /// </summary>
         /// <param name="query"></param>
         /// <param name="property"></param>
@@ -72,7 +72,7 @@ namespace TCMBApi
         }
 
         /// <summary>
-        /// Generate IQueryable Rates from TCBM Proxy class
+        /// Generate IQueryable Rates from TCBM Proxy class.
         /// </summary>
         /// <param name="ratesDeserialized"></param>
         /// <returns>IQueryable&lt;Rate&gt;</returns>
